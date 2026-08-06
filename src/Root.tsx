@@ -1,6 +1,6 @@
 import "./index.css";
 import { Composition } from "remotion";
-import { HojeEmSP } from "./HojeEmSP";
+import { NubankCard360 } from "./NubankCard360";
 import { videoFormats, defaultFormat } from "./brand";
 
 export const RemotionRoot: React.FC = () => {
@@ -9,9 +9,9 @@ export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="HojeEmSP"
-        component={HojeEmSP}
-        durationInFrames={150}
+        id="NubankCard360"
+        component={NubankCard360}
+        durationInFrames={120}
         fps={format.fps}
         width={format.width}
         height={format.height}

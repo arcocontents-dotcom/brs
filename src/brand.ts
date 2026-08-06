@@ -3,36 +3,31 @@
 // Qualquer composição Remotion deve importar valores daqui — nunca hardcode cor/fonte/logo direto numa composição.
 
 export const colors = {
-  primary: "#ffffff",    // cor primária — usada como fundo (background)
-  secondary: "#000000",  // cor secundária — usada nas fontes (texto)
-  background: "#ffffff", // alias explícito de fundo, aponta pra primary
-  text: "#000000",       // alias explícito de texto, aponta pra secondary
+  primary: "#000000",      // TODO: cor principal da marca
+  secondary: "#FFFFFF",    // TODO: cor secundária
+  accent: "#FF0000",       // TODO: cor de destaque/CTA
+  background: "#0A0A0A",   // TODO: fundo padrão dos vídeos
+  text: "#FFFFFF",         // TODO: cor de texto padrão
 } as const;
 
 export const fonts = {
   heading: {
-    family: "Clofie",
-    variants: {
-      semiBold: { weight: 600, src: "/fonts/Clofie-SemiBold.ttf" },
-      extraBold: { weight: 800, src: "/fonts/Clofie-ExtraBold.ttf" },
-    },
+    family: "TODO",              // TODO: nome da fonte de título
+    weight: 700,
+    src: "/fonts/TODO.ttf",      // caminho relativo a /public
   },
-  sub: {
-    family: "Gold & Queen",
+  body: {
+    family: "TODO",              // TODO: nome da fonte de corpo
     weight: 400,
-    src: "/fonts/Gold-and-Queen.ttf",
+    src: "/fonts/TODO.ttf",
   },
 } as const;
 
 export const logos = {
-  primary: "logos/barqwhite.png",   // logo principal — usar por padrão nas animações
-  black: "logos/barqblack.png",     // versão preta — usar sobre fundos claros/coloridos
-  whiteAlt: "logos/barqwhite1.png", // variação branca alternativa
-  blackAlt: "logos/barqblack1.png", // variação preta alternativa
-  abbr: "logos/barq.png",           // abreviação da logo
+  primary: "logos/TODO.png",   // TODO: logo principal
+  black: "logos/TODO.png",     // TODO: versão preta
 } as const;
 
-// Formatos de vídeo suportados pela marca.
 export const videoFormats = {
   square: { width: 1080, height: 1080, fps: 30 },
   vertical: { width: 1080, height: 1440, fps: 30 }, // proporção 3:4
